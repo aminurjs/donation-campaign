@@ -9,12 +9,32 @@ const Details = () => {
     fetch("../donation.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
-  }, []);
+  }, [id]);
   const findData = cards?.find((card) => card.id == id);
   if (!findData) {
     return;
   }
-  console.log(findData);
+
+  const handleSetIdLocal = () => {
+    const cardsIdLocal = localStorage.getItem("cardsId");
+    const cardsId = JSON.parse(cardsIdLocal);
+    const findLocalId = cardsId.find((id) => id === findData.id);
+    if (findLocalId) {
+      return;
+    }
+    if (cardsId) {
+      const localAllId = [...cardsId, findData.id];
+      const jsonId = JSON.stringify(localAllId);
+      localStorage.setItem("cardsId", jsonId);
+      return;
+    } else {
+      const localNewId = [findData.id];
+      const jsonNewId = JSON.stringify(localNewId);
+      localStorage.setItem("cardsId", jsonNewId);
+    }
+    cardsId.push(findData.id);
+    console.log(cardsId);
+  };
 
   return (
     <div className="max-w-[1320px] mx-auto mt-16 mb-28 px-4">
@@ -26,6 +46,7 @@ const Details = () => {
         />
         <div className="absolute left-0 bottom-0 p-9 rounded-b-lg bg-[#0b0b0b80] w-full">
           <button
+            onClick={handleSetIdLocal}
             style={{ backgroundColor: findData.color.color }}
             className="text-white font-semibold text-xl px-7 py-4 rounded"
           >
