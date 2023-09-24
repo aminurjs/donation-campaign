@@ -1,145 +1,217 @@
 [
   {
     "id": "1",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/1JcsCdG/Health.png",
+    "card_img": "https://i.ibb.co/1JcsCdG/Health.png",
+    "category_img": "https://i.ibb.co/1JcsCdG/Health.png",
     "title": "Clean water for children",
     "category": "Health",
-    "category_bg": "red",
-    "card_bg": "white",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.20)"
+    },
+    "color": {
+      "color": "#0052FF"
+    },
     "description": "Clean water is a fundamental right. Yet, many children across the globe lack access to this essential resource. By contributing, you're not just providing water, but ensuring a healthier future for these kids. Health complications arising from contaminated water can be prevented, and you can be a beacon of hope.",
     "price": "$150"
   },
   {
     "id": "2",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/0h7TBGF/Education.png",
+    "card_img": "https://i.ibb.co/0h7TBGF/Education.png",
+    "category_img": "https://i.ibb.co/0h7TBGF/Education.png",
     "title": "Good education",
     "category": "Education",
-    "category_bg": "blue",
-    "card_bg": "lightgray",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba( 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(255, 68, 74, 0.20)"
+    },
+    "color": {
+      "color": "#FF444A"
+    },
     "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
     "price": "$100"
   },
   {
     "id": "3",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "card_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "category_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
     "title": "Used Clothing Drive",
     "category": "Clothing",
-    "category_bg": "orange",
-    "card_bg": "lightyellow",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.20)"
+    },
+    "color": {
+      "color": "#79C23F"
+    },
     "description": "Clothing is a basic necessity, often taken for granted. Many underprivileged individuals face harsh winters without adequate clothing. By donating, you're not just providing clothing but offering warmth, dignity, and comfort to those in dire need during the coldest months.",
     "price": "$50"
   },
   {
     "id": "4",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/4SvgFHj/Food.png",
+    "card_img": "https://i.ibb.co/4SvgFHj/Food.png",
+    "category_img": "https://i.ibb.co/4SvgFHj/Food.png",
     "title": "Better Food for Everyone",
     "category": "Food",
-    "category_bg": "green",
-    "card_bg": "lightgreen",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.20)"
+    },
+    "color": {
+      "color": "#F87147"
+    },
     "description": "Food is essential for survival. Yet, countless individuals go to bed hungry every night. This initiative aims to bridge the gap between excess food and those who need it most. Your donation ensures that quality, nutritious meals reach the tables of many.",
     "price": "$40"
   },
   {
     "id": "5",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/4SvgFHj/Food.png",
+    "card_img": "https://i.ibb.co/4SvgFHj/Food.png",
+    "category_img": "https://i.ibb.co/4SvgFHj/Food.png",
     "title": "Provide Fresh Fruits",
     "category": "Food",
-    "category_bg": "green",
-    "card_bg": "lightgreen",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.20)"
+    },
+    "color": {
+      "color": "#F87147"
+    },
     "description": "Fresh fruits provide essential nutrients that many underserved communities lack. By supporting this initiative, you are ensuring that children and families receive the vitamins and minerals necessary for a healthy life, contributing to their well-being and future.",
     "price": "$30"
   },
   {
     "id": "6",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "card_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "category_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
     "title": "Shoes for Kids",
     "category": "Clothing",
-    "category_bg": "orange",
-    "card_bg": "lightyellow",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.20)"
+    },
+    "color": {
+      "color": "#79C23F"
+    },
     "description": "Every child deserves the basic comfort of a good pair of shoes. Many children walk barefoot, exposing them to health risks. Your donation will gift these children shoes, protecting their feet and giving them the joy of a simple yet significant possession.",
     "price": "$35"
   },
   {
     "id": "7",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/0h7TBGF/Education.png",
+    "card_img": "https://i.ibb.co/0h7TBGF/Education.png",
+    "category_img": "https://i.ibb.co/0h7TBGF/Education.png",
     "title": "Support Online Learning",
     "category": "Education",
-    "category_bg": "blue",
-    "card_bg": "lightgray",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba(255, 68, 74, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(255, 68, 74, 0.20)"
+    },
+    "color": {
+      "color": "#FF444A"
+    },
     "description": "Every child deserves the basic comfort of a good pair of shoes. Many children walk barefoot, exposing them to health risks. Your donation will gift these children shoes, protecting their feet and giving them the joy of a simple yet significant possession.",
     "price": "$70"
   },
   {
     "id": "8",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/1JcsCdG/Health.png",
+    "card_img": "https://i.ibb.co/1JcsCdG/Health.png",
+    "category_img": "https://i.ibb.co/1JcsCdG/Health.png",
     "title": "Vaccination Drive",
     "category": "Health",
-    "category_bg": "red",
-    "card_bg": "white",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.20)"
+    },
+    "color": {
+      "color": "#0052FF"
+    },
     "description": "Vaccinations have transformed the landscape of public health, preventing countless illnesses. However, many communities still lack access. Your contribution will help fund vaccination drives, ensuring healthier lives and futures for children and adults alike.",
     "price": "$120"
   },
   {
     "id": "9",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/1JcsCdG/Health.png",
+    "card_img": "https://i.ibb.co/1JcsCdG/Health.png",
+    "category_img": "https://i.ibb.co/1JcsCdG/Health.png",
     "title": "Mental Health Support",
     "category": "Health",
-    "category_bg": "red",
-    "card_bg": "white",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(0, 82, 255, 0.20)"
+    },
+    "color": {
+      "color": "#0052FF"
+    },
     "description": "Mental health is as crucial as physical health. Yet, it remains a stigmatized topic. By donating, you're supporting initiatives that provide mental health resources, counseling, and therapy to those in need, ensuring a holistic approach to health and well-being.",
     "price": "$90"
   },
   {
     "id": "10",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/0h7TBGF/Education.png",
+    "card_img": "https://i.ibb.co/0h7TBGF/Education.png",
+    "category_img": "https://i.ibb.co/0h7TBGF/Education.png",
     "title": "Books for Libraries",
     "category": "Education",
-    "category_bg": "blue",
-    "card_bg": "lightgray",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba(255, 68, 74, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(255, 68, 74, 0.20)"
+    },
+    "color": {
+      "color": "#FF444A"
+    },
     "description": "Libraries are sanctuaries of knowledge. They play a pivotal role in communities, offering resources and a space for learning. By contributing, you're ensuring that remote areas get access to books, fostering education and the joy of reading among children and adults.",
     "price": "$80"
   },
   {
     "id": "11",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "card_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
+    "category_img": "https://i.ibb.co/DtHqZjJ/Clothing.png",
     "title": "Winter Jackets Drive",
     "category": "Clothing",
-    "category_bg": "orange",
-    "card_bg": "lightyellow",
-    "text_btn_color": "black",
+    "card_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(121, 194, 63, 0.20)"
+    },
+    "color": {
+      "color": "#79C23F"
+    },
     "description": "The biting cold of winter can be harsh without the warmth of a jacket. Many individuals, especially in underserved areas, face this reality. Your donation supports the collection and distribution of winter jackets, ensuring warmth and comfort for all during winter.",
     "price": "$60"
   },
   {
     "id": "12",
-    "image": "Donation img.jpg",
-    "cover": "https://i.ibb.co/4SvgFHj/Food.png",
-    "title": "Support Community Kitchens",
+    "card_img": "https://i.ibb.co/4SvgFHj/Food.png",
+    "category_img": "https://i.ibb.co/4SvgFHj/Food.png",
+    "title": "Support Community",
     "category": "Food",
-    "category_bg": "green",
-    "card_bg": "lightgreen",
-    "text_btn_color": "white",
+    "card_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.15)"
+    },
+    "category_bg": {
+      "backgroundColor": "rgba(248, 113, 71, 0.20)"
+    },
+    "color": {
+      "color": "#F87147"
+    },
     "description": "Community kitchens are a beacon of hope for many who cannot afford meals. By supporting this initiative, you're ensuring that these kitchens have the resources to provide nutritious meals daily, making a tangible difference in the lives of many.",
     "price": "$45"
   }
