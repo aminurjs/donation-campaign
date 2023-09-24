@@ -1,8 +1,12 @@
+import Navbar from "../Navbar/Navbar";
+
 const Root = () => {
   return (
-    <div>
-      <div>Hello world!</div>
-    </div>
+    <main>
+      <section>
+        <Navbar />
+      </section>
+    </main>
   );
 };
 
