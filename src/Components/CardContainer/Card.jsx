@@ -1,9 +1,17 @@
 import PropType from "prop-types";
+import { useNavigate } from "react-router-dom";
+
 const Card = ({ card }) => {
-  const { category_img, title, card_bg, color, category, category_bg } = card;
-  console.log(card_bg, color);
+  const { id, category_img, title, card_bg, color, category, category_bg } =
+    card;
+
+  const navigate = useNavigate();
+  const handleDetails = () => {
+    navigate(`/details/${id}`);
+  };
+
   return (
-    <div>
+    <div onClick={handleDetails}>
       <img className="w-full" src={category_img} alt="" />
       <div style={card_bg} className="p-4 rounded-lg">
         <p
