@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
-    <div className="bg-[url(https://i.ibb.co/yp4ZVNr/Rectangle-4281.png)] bg-no-repeat bg-cover bg-center">
-      <div className="bg-[#FFFFFFF2] pt-60 pb-52">
+    <div className="bg-[url(https://i.ibb.co/yp4ZVNr/Rectangle-4281.png)] bg-no-repeat bg-cover bg-bottom">
+      <div className="bg-[#FFFFFFEB] pt-60 pb-52">
         <h1 className="text-3xl md:text-5xl text-dark-1 text-center font-bold mb-10">
           I Grow By Helping People In Need
         </h1>

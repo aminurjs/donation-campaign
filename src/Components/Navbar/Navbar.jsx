@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const location = useLocation();
   const [open, setOpen] = useState(false);
   const Link = (
     <>
@@ -31,11 +30,7 @@ const Navbar = () => {
   );
 
   return (
-    <div
-      className={`${
-        location === "/" ? "bg-transparent absolute top-0 left-0 w-full" : ""
-      }`}
-    >
+    <div className="bg-transparent absolute top-0 left-0 w-full">
       <nav className="navbar max-w-[1320px] mx-auto pt-5 px-4">
         <div className="navbar-start">
           <a href="/">

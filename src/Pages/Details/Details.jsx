@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import swal from "sweetalert";
+import "./Details.css";
 
 const Details = () => {
   const [cards, setCards] = useState([]);
@@ -16,6 +18,11 @@ const Details = () => {
   }
 
   const handleSetIdLocal = () => {
+    swal({
+      title: "Thank You!",
+      text: "You have donated successfully!",
+      icon: "success",
+    });
     const cardsLocalJson = localStorage.getItem("cards");
     const cardsLocal = JSON.parse(cardsLocalJson);
     if (cardsLocal) {
@@ -35,7 +42,7 @@ const Details = () => {
   };
 
   return (
-    <div className="max-w-[1320px] mx-auto mt-16 mb-28 px-4">
+    <div className="max-w-[1320px] mx-auto mt-40 mb-28 px-4">
       <div className="min-h-[300px] md:min-h-[400px] lg:min-h-[500px] relative mb-14">
         <img className=" w-full rounded-lg" src={findData.cover} alt="" />
         <div className="absolute left-0 bottom-0 p-9 rounded-b-lg bg-[#0b0b0b80] w-full">

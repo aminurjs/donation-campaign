@@ -16,10 +16,14 @@ const Statistics = () => {
     const yourDonation = JSON.parse(yourDonationJson);
     setDonation(yourDonation);
   }, []);
+  let donate = 0;
+  if (donation) {
+    donate = donation.length;
+  }
 
   const data = [
-    { name: "Group A", value: total.length - donation.length },
-    { name: "Group B", value: donation.length },
+    { name: "Group A", value: total.length - donate },
+    { name: "Group B", value: donate },
   ];
   const COLORS = ["#FF444A", "#00C49F"];
 
@@ -51,7 +55,7 @@ const Statistics = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-20">
         <PieChart width={400} height={400}>
           <Pie
             data={data}

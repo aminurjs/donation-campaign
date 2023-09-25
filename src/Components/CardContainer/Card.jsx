@@ -11,7 +11,7 @@ const Card = ({ card }) => {
   };
 
   return (
-    <div onClick={handleDetails}>
+    <div onClick={handleDetails} className="cursor-pointer">
       <img className="w-full" src={category_img} alt="" />
       <div style={card_bg} className="p-4 rounded-b-lg">
         <p
