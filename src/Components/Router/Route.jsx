@@ -3,6 +3,7 @@ import Root from "../Root/Root";
 import Home from "../../Pages/Home/Home";
 import Details from "../../Pages/Details/Details";
 import Donation from "../../Pages/Donation/Donation";
+import Statistics from "../../Pages/Statistics/Statistics";
 
 const MyRoute = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const MyRoute = createBrowserRouter([
       {
         path: "/donation",
         element: <Donation></Donation>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
     ],
   },

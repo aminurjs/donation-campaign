@@ -8,8 +8,11 @@ const DonationCard = ({ card }) => {
     navigate(`/details/${id}`);
   };
   return (
-    <div style={card_bg} className="flex rounded-lg w-full">
-      <img src={card_img} alt="" />
+    <div
+      style={card_bg}
+      className="flex flex-col md:flex-row rounded-lg w-full"
+    >
+      <img className="rounded-xl md:rounded-none" src={card_img} alt="" />
       <div className="p-6 rounded-b-lg">
         <p
           style={category_bg}

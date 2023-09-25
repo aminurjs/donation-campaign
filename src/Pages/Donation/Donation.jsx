@@ -7,11 +7,8 @@ const Donation = () => {
   useEffect(() => {
     const localItemsJson = localStorage.getItem("cards");
     const localItems = JSON.parse(localItemsJson);
-    console.log(localItems);
-
     setFilterCards(localItems);
   }, []);
-  console.log(filterCards);
   return (
     <div className="max-w-[1320px] mx-auto mt-24 mb-28 px-4">
       {filterCards ? (
