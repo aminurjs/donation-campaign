@@ -26,7 +26,7 @@
     "title": "Good education",
     "category": "Education",
     "card_bg": {
-      "backgroundColor": "rgba( 0.15)"
+      "backgroundColor": "rgba(255, 68, 74, 0.15)"
     },
     "category_bg": {
       "backgroundColor": "rgba(255, 68, 74, 0.20)"

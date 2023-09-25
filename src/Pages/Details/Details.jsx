@@ -10,40 +10,34 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, [id]);
-  const findData = cards?.find((card) => card.id == id);
+  const findData = cards?.find((card) => card.id === id);
   if (!findData) {
     return;
   }
 
   const handleSetIdLocal = () => {
-    const cardsIdLocal = localStorage.getItem("cardsId");
-    const cardsId = JSON.parse(cardsIdLocal);
-    const findLocalId = cardsId.find((id) => id === findData.id);
-    if (findLocalId) {
-      return;
-    }
-    if (cardsId) {
-      const localAllId = [...cardsId, findData.id];
-      const jsonId = JSON.stringify(localAllId);
-      localStorage.setItem("cardsId", jsonId);
+    const cardsLocalJson = localStorage.getItem("cards");
+    const cardsLocal = JSON.parse(cardsLocalJson);
+    if (cardsLocal) {
+      const findLocalCard = cardsLocal.find((card) => card.id === findData.id);
+      if (findLocalCard) {
+        return;
+      }
+      const localAllCards = [...cardsLocal, findData];
+      const jsonId = JSON.stringify(localAllCards);
+      localStorage.setItem("cards", jsonId);
       return;
     } else {
-      const localNewId = [findData.id];
-      const jsonNewId = JSON.stringify(localNewId);
-      localStorage.setItem("cardsId", jsonNewId);
+      const localNewCard = [findData];
+      const jsonNewCard = JSON.stringify(localNewCard);
+      localStorage.setItem("cards", jsonNewCard);
     }
-    cardsId.push(findData.id);
-    console.log(cardsId);
   };
 
   return (
     <div className="max-w-[1320px] mx-auto mt-16 mb-28 px-4">
-      <div className="relative mb-14">
-        <img
-          className="max-h-[700px] w-full rounded-lg"
-          src={findData.cover}
-          alt=""
-        />
+      <div className="min-h-[300px] md:min-h-[400px] lg:min-h-[500px] relative mb-14">
+        <img className=" w-full rounded-lg" src={findData.cover} alt="" />
         <div className="absolute left-0 bottom-0 p-9 rounded-b-lg bg-[#0b0b0b80] w-full">
           <button
             onClick={handleSetIdLocal}
