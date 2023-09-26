@@ -48,14 +48,14 @@ const Statistics = () => {
         textAnchor={x > cx ? "start" : "end"}
         dominantBaseline="central"
       >
-        {`${(percent * 100).toFixed(0)}%`}
+        {`${(percent * 100).toFixed(1)}%`}
       </text>
     );
   };
 
   return (
     <>
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-28">
         <PieChart width={320} height={320}>
           <Pie
             data={data}
@@ -75,7 +75,7 @@ const Statistics = () => {
           </Pie>
         </PieChart>
       </div>
-      <div className="w-full text-center flex justify-center flex-col md:flex-row md:gap-10 mb-24">
+      <div className="w-full text-center flex justify-center flex-col md:flex-row md:gap-10 mt-10 mb-24">
         <div className="flex gap-2 items-center justify-center">
           <p className="text-lg text-dark-1">Your Donation</p>
           <span className="w-24 h-2.5 rounded bg-[#00C49F] mt-0.5"></span>

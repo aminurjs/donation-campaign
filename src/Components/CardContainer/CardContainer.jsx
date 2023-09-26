@@ -27,7 +27,7 @@ const CardContainer = ({ search }) => {
           ))}
         </div>
       ) : (
-        <h2 className="text-dark-1 text-4xl font-bold text-center">
+        <h2 className="text-dark-1 text-2xl md:text-3xl lg:text-4xl font-bold text-center max-w-[80%] mx-auto leading-normal">
           Sorry, we could not find any matches for your search
         </h2>
       )}

@@ -15,13 +15,13 @@ const Banner = ({ handleSearch }) => {
         <div className="max-w-sm md:max-w-[470px] text-center mx-auto ">
           <form onSubmit={handleSubmit}>
             <input
-              className="w-3/4 p-4 text-dark-1 placeholder:text-[#0B0B0B66] bg-white outline-none border border-gray-300 rounded-l-lg"
+              className="w-3/4 py-2 md:py-4 px-4 text-dark-1 placeholder:text-[#0B0B0B66] bg-white outline-none border border-gray-300 rounded-l-lg"
               type="text"
               name="search"
               placeholder="Search here...."
             />
             <input
-              className="w-1/4 text-white font-semibold py-4 rounded-r-lg bg-[#FF444A] cursor-pointer"
+              className="w-1/4 text-white font-semibold py-2 md:py-4 rounded-r-lg bg-[#FF444A] cursor-pointer"
               type="submit"
               value="Search"
             />
